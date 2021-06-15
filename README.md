@@ -1,0 +1,194 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2019 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# ellipe
+
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+
+> Compute the [complete elliptic integral of the second kind][elliptic-integral].
+
+<section class="intro">
+
+The [complete elliptic integral of the second kind][elliptic-integral] is defined as
+
+<!-- <equation class="equation" label="eq:complete_elliptic_integral_second_kind" align="center" raw="E(m)=\int_0^{\pi/2} \sqrt{1 - m (\sin\theta)^2} d\theta" alt="Complete elliptic integral of the second kind."> -->
+
+<div class="equation" align="center" data-raw-text="E(m)=\int_0^{\pi/2} \sqrt{1 - m (\sin\theta)^2} d\theta" data-equation="eq:complete_elliptic_integral_second_kind">
+    <img src="https://cdn.rawgit.com/stdlib-js/stdlib/c56ebc06eff902eff768ef75d45e051dd248094e/lib/node_modules/@stdlib/math/base/special/ellipe/docs/img/equation_complete_elliptic_integral_second_kind.svg" alt="Complete elliptic integral of the second kind.">
+    <br>
+</div>
+
+<!-- </equation> -->
+
+where the parameter `m` is related to the modulus `k` by `m = k^2`.
+
+</section>
+
+<!-- /.intro -->
+
+<section class="installation">
+
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-ellipe
+```
+
+</section>
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var ellipe = require( '@stdlib/math-base-special-ellipe' );
+```
+
+#### ellipe( m )
+
+Computes the [complete elliptic integral of the second kind][elliptic-integral].
+
+```javascript
+var v = ellipe( 0.5 );
+// returns ~1.351
+
+v = ellipe( -1.0 );
+// returns ~1.910
+
+v = ellipe( 2.0 );
+// returns NaN
+
+v = ellipe( Infinity );
+// returns NaN
+
+v = ellipe( -Infinity );
+// returns NaN
+
+v = ellipe( NaN );
+// returns NaN
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+## Notes
+
+-   This function is valid for `-∞ < m <= 1`.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var ellipe = require( '@stdlib/math-base-special-ellipe' );
+
+var m;
+var i;
+
+for ( i = 0; i < 100; i++ ) {
+    m = -1.0 + ( randu() * 2.0 );
+    console.log( 'ellipe(%d) = %d', m, ellipe( m ) );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
+
+<section class="references">
+
+## References
+
+-   Fukushima, Toshio. 2009. "Fast computation of complete elliptic integrals and Jacobian elliptic functions." _Celestial Mechanics and Dynamical Astronomy_ 105 (4): 305. doi:[10.1007/s10569-009-9228-z][@fukushima:2009a].
+-   Fukushima, Toshio. 2015. "Precise and fast computation of complete elliptic integrals by piecewise minimax rational function approximation." _Journal of Computational and Applied Mathematics_ 282 (July): 71–76. doi:[10.1016/j.cam.2014.12.038][@fukushima:2015a].
+
+</section>
+
+<!-- /.references -->
+
+
+<section class="main-repo" >
+
+* * *
+
+## Notice
+
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+
+For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
+
+---
+
+## License
+
+See [LICENSE][stdlib-license].
+
+
+## Copyright
+
+Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
+
+</section>
+
+<!-- /.stdlib -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[npm-image]: http://img.shields.io/npm/v/@stdlib/math-base-special-ellipe.svg
+[npm-url]: https://npmjs.org/package/@stdlib/math-base-special-ellipe
+
+[test-image]: https://github.com/stdlib-js/math-base-special-ellipe/actions/workflows/test.yml/badge.svg
+[test-url]: https://github.com/stdlib-js/math-base-special-ellipe/actions/workflows/test.yml
+
+[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-base-special-ellipe/main.svg
+[coverage-url]: https://codecov.io/github/stdlib-js/math-base-special-ellipe?branch=main
+
+[dependencies-image]: https://img.shields.io/david/stdlib-js/math-base-special-ellipe
+[dependencies-url]: https://david-dm.org/stdlib-js/math-base-special-ellipe/main
+
+[stdlib]: https://github.com/stdlib-js/stdlib
+
+[stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
+
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-ellipe/main/LICENSE
+
+[elliptic-integral]: https://en.wikipedia.org/wiki/Elliptic_integral
+
+[@fukushima:2009a]: https://doi.org/10.1007/s10569-009-9228-z
+
+[@fukushima:2015a]: https://doi.org/10.1016/j.cam.2014.12.038
+
+</section>
+
+<!-- /.links -->
