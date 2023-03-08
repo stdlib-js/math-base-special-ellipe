@@ -30,10 +30,14 @@ The [complete elliptic integral of the second kind][elliptic-integral] is define
 
 <!-- <equation class="equation" label="eq:complete_elliptic_integral_second_kind" align="center" raw="E(m)=\int_0^{\pi/2} \sqrt{1 - m (\sin\theta)^2} d\theta" alt="Complete elliptic integral of the second kind."> -->
 
-<div class="equation" align="center" data-raw-text="E(m)=\int_0^{\pi/2} \sqrt{1 - m (\sin\theta)^2} d\theta" data-equation="eq:complete_elliptic_integral_second_kind">
+```math
+E(m)=\int_0^{\pi/2} \sqrt{1 - m (\sin\theta)^2} d\theta
+```
+
+<!-- <div class="equation" align="center" data-raw-text="E(m)=\int_0^{\pi/2} \sqrt{1 - m (\sin\theta)^2} d\theta" data-equation="eq:complete_elliptic_integral_second_kind">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@129e5a32ce2af2ed694daf2e9d4214255e60c42a/lib/node_modules/@stdlib/math/base/special/ellipe/docs/img/equation_complete_elliptic_integral_second_kind.svg" alt="Complete elliptic integral of the second kind.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -43,14 +47,30 @@ where the parameter `m` is related to the modulus `k` by `m = k^2`.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-ellipe
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ellipe from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@deno/mod.js';
+var ellipe = require( '@stdlib/math-base-special-ellipe' );
 ```
 
 #### ellipe( m )
@@ -98,8 +118,8 @@ v = ellipe( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import ellipe from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var ellipe = require( '@stdlib/math-base-special-ellipe' );
 
 var m;
 var i;
@@ -150,7 +170,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -189,7 +209,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -211,7 +231,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/ellipk]: https://github.com/stdlib-js/math-base-special-ellipk/tree/deno
+[@stdlib/math/base/special/ellipk]: https://github.com/stdlib-js/math-base-special-ellipk
 
 <!-- </related-links> -->
 
