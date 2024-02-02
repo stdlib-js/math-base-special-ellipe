@@ -168,6 +168,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
+-   <span class="package-name">[`@stdlib/math-base/special/ellipj`][@stdlib/math/base/special/ellipj]</span><span class="delimiter">: </span><span class="description">compute the Jacobi elliptic functions sn, cn, and dn.</span>
 -   <span class="package-name">[`@stdlib/math-base/special/ellipk`][@stdlib/math/base/special/ellipk]</span><span class="delimiter">: </span><span class="description">compute the complete elliptic integral of the first kind.</span>
 
 </section>
@@ -246,6 +247,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@fukushima:2015a]: https://doi.org/10.1016/j.cam.2014.12.038
 
 <!-- <related-links> -->
+
+[@stdlib/math/base/special/ellipj]: https://github.com/stdlib-js/math-base-special-ellipj
 
 [@stdlib/math/base/special/ellipk]: https://github.com/stdlib-js/math-base-special-ellipk
 
