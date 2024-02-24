@@ -65,6 +65,11 @@ where the parameter `m` is related to the modulus `k` by `m = k^2`.
 ## Usage
 
 ```javascript
+import ellipe from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-ellipe/tags). For example,
+
+```javascript
 import ellipe from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@v0.2.1-deno/mod.js';
 ```
 
@@ -114,7 +119,7 @@ v = ellipe( NaN );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import ellipe from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@v0.2.1-deno/mod.js';
+import ellipe from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@deno/mod.js';
 
 var m;
 var i;
