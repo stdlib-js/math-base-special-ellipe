@@ -44,8 +44,8 @@
     "@stdlib/constants-float64-half-pi": "^0.2.1",
     "@stdlib/constants-float64-pinf": "^0.2.1",
     "@stdlib/math-base-napi-unary": "^0.2.1",
-    "@stdlib/math-base-special-ellipk": "^0.2.1",
-    "@stdlib/math-base-special-ln": "^0.2.1",
+    "@stdlib/math-base-special-ellipk": "^0.2.2",
+    "@stdlib/math-base-special-ln": "^0.2.3",
     "@stdlib/math-base-special-sqrt": "^0.2.1",
     "@stdlib/utils-library-manifest": "^0.2.1"
   },
