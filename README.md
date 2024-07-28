@@ -65,7 +65,7 @@ where the parameter `m` is related to the modulus `k` by `m = k^2`.
 ## Usage
 
 ```javascript
-import ellipe from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@deno/mod.js';
+import ellipe from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@v0.3.0-deno/mod.js';
 ```
 
 #### ellipe( m )
@@ -114,7 +114,7 @@ v = ellipe( NaN );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import ellipe from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@deno/mod.js';
+import ellipe from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@v0.3.0-deno/mod.js';
 
 var m;
 var i;
