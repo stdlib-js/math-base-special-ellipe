@@ -43,14 +43,14 @@
   "dependencies": {
     "@stdlib/constants-float64-half-pi": "^0.2.2",
     "@stdlib/constants-float64-pinf": "^0.2.2",
-    "@stdlib/math-base-napi-unary": "^0.2.4",
+    "@stdlib/math-base-napi-unary": "^0.2.5",
     "@stdlib/math-base-special-ellipk": "^0.2.3",
     "@stdlib/math-base-special-ln": "^0.2.4",
     "@stdlib/math-base-special-sqrt": "^0.2.2",
     "@stdlib/utils-library-manifest": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/console-log-each-map": "github:stdlib-js/console-log-each-map#main",
+    "@stdlib/console-log-each-map": "^0.1.0",
     "@stdlib/constants-float64-eps": "^0.2.2",
     "@stdlib/constants-float64-ninf": "^0.2.2",
     "@stdlib/fs-read-file": "^0.2.2",
@@ -60,8 +60,8 @@
     "@stdlib/math-base-tools-evalpoly-compile": "^0.3.0",
     "@stdlib/math-base-tools-evalpoly-compile-c": "^0.2.1",
     "@stdlib/random-array-uniform": "^0.2.1",
-    "@stdlib/random-base-randu": "^0.2.1",
-    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/random-base-randu": "^0.2.2",
+    "@stdlib/string-format": "^0.2.3",
     "@stdlib/string-substring-after": "^0.2.2",
     "@stdlib/string-substring-before": "^0.2.2",
     "@stdlib/time-current-year": "^0.2.2",
