@@ -67,7 +67,7 @@ where the parameter `m` is related to the modulus `k` by `m = k^2`.
 To use in Observable,
 
 ```javascript
-ellipe = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@umd/browser.js' )
+ellipe = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@v0.3.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -79,7 +79,7 @@ var ellipe = require( 'path/to/vendor/umd/math-base-special-ellipe/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@v0.3.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -142,7 +142,7 @@ v = ellipe( NaN );
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-ellipe@v0.3.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
